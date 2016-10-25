@@ -22,6 +22,9 @@ var Fortune = function(){
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
+    unlucky = [];
+    lucky = [];
+    dead = [];
     $(".unlucky").hide();
     $(".lucky").hide();
     $(".dead").hide();
@@ -45,5 +48,10 @@ $(document).ready(function() {
     $(".output").show();
     $(Fortune()).show();
 
+    $("input:checkbox:checked")
+    .each(function() {
+        $(this).prop("checked", false);
+
+    });
   });
 });

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fortune Teller</h1>
+      <form class="fortune">
+        <div class="form-group">
+          <p>Please select all that apply.<br>In the past month, I have...</p>
+          <input type="checkbox" name="unlucky-events" value="mirror">broken a mirror.<br>
+          <input type="checkbox" name="unlucky-events" value="ladder">walked under a ladder.<br>
+          <input type="checkbox" name="unlucky-events" value="blackCat">seen a black cat.<br>
+          <input type="checkbox" name="unlucky-events" value="bus">opened an umbrella inside.<br>
+        </div>
+        <div class="form-group">
+          <p>Please select all that apply.<br>In the past month, I have...</p>
+          <input type="checkbox" name="lucky-events" value="pin">found a pin and picked it up.<br>
+          <input type="checkbox" name="lucky-events" value="penny">found a heads-up penny.<br>
+          <input type="checkbox" name="lucky-events" value="clover">found a four-leaf clover.<br>
+          <input type="checkbox" name="lucky-events" value="fox">seen a fox in the wild.<br>
+        </div>
+        <div class="form-group">
+          <p>Please select all that apply.<br>In the past month, I have...</p>
+          <input type="checkbox" name="horrible-events" value="hornets">punched a hornets' nest.<br>
+          <input type="checkbox" name="horrible-events" value="">been hit by a bus.<br>
+          <input type="checkbox" name="horrible-events" value="">contracted typhoid fever.<br>
+          <input type="checkbox" name="horrible-events" value="">been gored by a wild boar.<br>
+        </div>
+        <button type="submit">What is your fortune?</button>
+      </form>
+      <div class="output">
+        <h3>You will...</h3>
+        <p class="lucky"> live forever! Congratulations!</p>
+        <p class="unlucky"> be mildly unhappy for most of your remaining life. That's too bad.</p>
+        <p class="dead"> probably not live to see tomorrow. Change your ways, or this could be your last day on Earth!</p>
+        <p class="boring"> live out the rest of your days according to random chance.</p>
+      </div>
+    </div>
+  </body>
+</html>
